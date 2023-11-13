@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer type="module" src="./library/index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="search" id="ele-search">
+        <form action="#" class="form" autocomplete="off">
+          <div class="input-box">
+            <label for="input">search</label>
+            <input
+              type="text"
+              id="input"
+              value=""
+              class="input"
+              autocapitalize="off"
+            />
+          </div>
+          <div class="buttons">
+            <button>search</button>
+          </div>
+        </form>
+      </div>
+      <div class="content" id="ele-productList"></div>
+      <div class="pagination">
+        <div id="ele-pagination-prev" class="prev-wrap"></div>
+        <div
+          class="number active"
+          id="1"
+          onclick="dispatch('changePage',1,this)"
+        >
+          1
+        </div>
+        <div class="number" id="2" onclick="dispatch('changePage',2,this)">
+          2
+        </div>
+        <div class="number" id="3" onclick="dispatch('changePage',3,this)">
+          3
+        </div>
+        <div class="number" id="4" onclick="dispatch('changePage',4,this)">
+          4
+        </div>
+        <div class="number" id="5" onclick="dispatch('changePage',5,this)">
+          5
+        </div>
+        <div id="ele-pagination-next" class="next-wrap"></div>
+      </div>
+    </section>
+  </body>
+</html>
